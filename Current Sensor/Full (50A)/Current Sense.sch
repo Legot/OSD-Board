@@ -4683,8 +4683,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC1" library="burr-brown" deviceset="INA138" device="" value="INA169"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0805K" value=".1uf"/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
-<part name="PAD1" library="wirepad" deviceset="SMD5" device=""/>
-<part name="PAD3" library="wirepad" deviceset="SMD5" device=""/>
+<part name="OUT" library="wirepad" deviceset="SMD5" device=""/>
+<part name="IN" library="wirepad" deviceset="SMD5" device=""/>
 <part name="PAD6" library="wirepad" deviceset="SMD5" device=""/>
 <part name="PAD8" library="wirepad" deviceset="SMD5" device=""/>
 <part name="VCC" library="wirepad" deviceset="SMD2" device=""/>
@@ -4717,8 +4717,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="IC1" gate="G$1" x="0" y="0"/>
 <instance part="C1" gate="G$1" x="20.32" y="-5.08"/>
 <instance part="R2" gate="G$1" x="15.24" y="-7.62" rot="R90"/>
-<instance part="PAD1" gate="1" x="-17.78" y="7.62" rot="R270"/>
-<instance part="PAD3" gate="1" x="-17.78" y="-7.62" rot="R90"/>
+<instance part="OUT" gate="1" x="-17.78" y="7.62" rot="R270"/>
+<instance part="IN" gate="1" x="-17.78" y="-7.62" rot="R90"/>
 <instance part="PAD6" gate="1" x="-25.4" y="7.62" rot="R270"/>
 <instance part="PAD8" gate="1" x="-25.4" y="-7.62" rot="R90"/>
 <instance part="VCC" gate="1" x="43.18" y="7.62" rot="R180"/>
@@ -4751,7 +4751,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="IC1" gate="G$1" pin="IN-"/>
 <wire x1="-17.78" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
+<pinref part="OUT" gate="1" pin="P"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <junction x="-17.78" y="5.08"/>
 <pinref part="V_MAIN" gate="1" pin="P"/>
@@ -4794,7 +4794,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="IN+"/>
-<pinref part="PAD3" gate="1" pin="P"/>
+<pinref part="IN" gate="1" pin="P"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="-17.78" y="-5.08"/>
 <wire x1="-17.78" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="91"/>
